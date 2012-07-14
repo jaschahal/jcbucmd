@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>jQuery Blur Unblur plugin</title>
+  <link rel="stylesheet" href="http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap.min.css" type="text/css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jcbucmd.js"></script>
+  
+</head>
+<body>
+    <div class="container">
+      <div class="hero-unit">
+        <h2 class="blue">Demo for jcbucmd</h2><br>
+        <p><a class="btn btn-primary btn-large" href="http://jaspreetchahal.org/jquery-text-blur-unblur-plugin/">&laquo; Go to full article</a></p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div id="blurit">
+      	 turpis est elementum lectus! Nunc est, porta duis, dapibus vut sociis ultricies, enim natoque, rhoncus cras porta a? Rhoncus rhoncus nunc dictumst phasellus in lorem, nec sed nunc, ridiculus habitasse! Magnis dignissim tempor ut! Vut dignissim pulvinar, odio eu ridiculus nascetur dictumst montes vel enim porta. Ac pulvina      	
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="javascript:void(0)" onclick="blurit('low')">Blue above text [hardness=low]</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)" onclick="blurit('medium')">Blue above text [hardness=medium]</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)" onclick="blurit('high')">Blue above text [hardness=high]</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)" onclick="unblurit()">Un-blur above text</a>
+     </div>
+     <script type="text/javascript">
+     		function blurit(brush) {
+	     		jQuery('#blurit').jcbucmd({blurHardness:brush,blurColor:'#C00'});
+	     	}
+			function unblurit() {
+	     		jQuery('#blurit').jcbucmd({cmd:'unblur'});
+	     	}
+
+
+     </script>
+
+</body>
+</html>

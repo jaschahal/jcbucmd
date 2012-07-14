@@ -2,3 +2,23 @@ jcbucmd
 =======
 
 jQuery Text Blur Unblur plugin
+
+
+==Options==
+
+* cmd:  'blur' or 'unblur', use this to blur or unblur. 
+* blurColor:  You can use rgb or HEX colors. This is the color for blur. e.g. '#c00' will result in red blur
+* unblurColor:'#333'
+* blurHardness: possible values are high, low, medium  you can use it to increase or decrease the text blur.
+
+
+==Example Usage functions==
+
+--To blur--
+jQuery('#blurit').jcbucmd({blurHardness:brush,blurColor:'#C00'});
+
+--To unblur--
+jQuery('#blurit').jcbucmd({cmd:'unblur'});
+
+[More reading]: http://jaspreetchahal.org/jquery-text-blur-unblur-plugin/
+
